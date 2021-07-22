@@ -32,6 +32,7 @@ $dg-red: hsl(0, 6%, 24%);
 
 
 
+
 body {
     font-family: Josefin Sans, sans-serif;
     font-size: 16px;
@@ -52,14 +53,40 @@ body {
 }
 
 h1 {
-    font-family: Josefin Sans Light;
-    padding: 30px;
+    font-family: Josefin Sans Light, sans-serif;
+    margin: 0;
+    padding: 60px 30px 20px;
     text-transform: uppercase;
     letter-spacing: 10px;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 200;
+    
+    strong {
+        color: black;
+        font-family: Josefin Sans, sans-serif;
+        font-weight: 700;
+    }
+
 }
+
+p {
+    font-size: 13px;
+    padding: 0 40px;
+    text-align: center;
+    line-height: 20px;
+    margin: 0;
+}
+
+.email-input {
+    border: 1px $dg-red solid;
+
+
+    input {
+        border: none;
+    }
+}
+
 
 
 
