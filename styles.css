@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Josefin Sans;
+  src: url(fonts/JosefinSans-VariableFont_wght.ttf);
+}
+body {
+  height: 100%;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/*# sourceMappingURL=styles.css.map */
