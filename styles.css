@@ -40,18 +40,53 @@ h1 strong {
 }
 
 p {
-  font-size: 13px;
+  font-size: 14px;
   padding: 0 40px;
   text-align: center;
-  line-height: 20px;
+  line-height: 21px;
   margin: 0;
 }
 
 .email-input {
+  margin: 20px 30px;
   border: 1px #413a3a solid;
+  border-radius: 21.8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.3;
 }
 .email-input input {
+  font-family: Josefin Sans, sans-serif;
+  font-size: 14px;
   border: none;
+  margin: 14px;
+  padding-left: 10px;
+  background-color: transparent;
+}
+.email-input button {
+  background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  margin-left: 1px;
+  display: flex;
+  align-items: center;
+  padding: 13.8px 27px;
+  border: none;
+  border-radius: 23.8px;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ce9797;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #ce9797;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #ce9797;
 }
 
 .attribution {
