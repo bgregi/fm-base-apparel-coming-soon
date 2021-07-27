@@ -47,7 +47,7 @@ p {
   margin: 0;
 }
 
-.email-input {
+.email-div {
   margin: 20px 30px;
   height: 45px;
   border: 2px rgba(0, 0, 0, 0.15) solid;
@@ -56,7 +56,7 @@ p {
   align-items: center;
   justify-content: space-between;
 }
-.email-input input {
+.email-div input {
   font-family: Josefin Sans, sans-serif;
   font-size: 14px;
   border: none;
@@ -65,7 +65,12 @@ p {
   outline: none;
   opacity: 0.5;
 }
-.email-input button {
+.email-div #error {
+  position: relative;
+  height: 20px;
+  left: 50px;
+}
+.email-div button {
   background-image: linear-gradient(135deg, #f8bfbf, #ee8c8c);
   position: relative;
   left: 2px;
@@ -77,15 +82,25 @@ p {
   box-shadow: 0px 10px 20px #ffd1d1;
   opacity: 1;
 }
-.email-input button:hover {
+
+.email-div-focus {
+  border: 2px black solid;
+}
+
+.email-div-error {
+  border: 2px #f96262 solid;
+}
+
+button:hover {
   opacity: 0.5;
   padding: 14.5px 35px;
   transition: 0.5s;
 }
-.email-input button:active {
+
+button:active {
   opacity: 1;
   padding: 14.5px 35px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 ::placeholder {

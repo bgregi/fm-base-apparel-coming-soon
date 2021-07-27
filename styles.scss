@@ -78,7 +78,7 @@ p {
     margin: 0;
 }
 
-.email-input {
+.email-div {
     margin: 20px 30px;
     height: 45px;
     border: 2px rgba($color: #000000, $alpha: .15) solid;
@@ -86,7 +86,6 @@ p {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // opacity: .2;
 
     input {
         font-family: Josefin Sans, sans-serif;
@@ -96,6 +95,13 @@ p {
         background-color: transparent;
         outline: none;
         opacity: .5;
+    }
+
+    #error {
+        // display: none;
+        position: relative;
+        height: 20px;
+        left: 50px;
     }
 
     button {
@@ -111,18 +117,32 @@ p {
         opacity: 1;
     }
 
-    button:hover {
-        opacity: .5;
-        padding: 14.5px 35px;
-        transition: .5s;
-    }
-    button:active {
-        opacity: 1;
-        padding: 14.5px 35px;
-        transition: .5s;
-    }
 }
 
+.email-div-focus {
+    border: 2px black solid;
+}
+
+.email-div-error {
+    border: 2px $sf-red solid;
+
+
+}
+
+
+
+
+
+button:hover {
+    opacity: .5;
+    padding: 14.5px 35px;
+    transition: .5s;
+}
+button:active {
+    opacity: 1;
+    padding: 14.5px 35px;
+    transition: .2s;
+}
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: $ds-red;
