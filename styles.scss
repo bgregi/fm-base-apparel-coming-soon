@@ -81,12 +81,12 @@ p {
 .email-input {
     margin: 20px 30px;
     height: 45px;
-    border: 1px $dg-red solid;
-    border-radius: 22.5px;
+    border: 2px rgba($color: #000000, $alpha: .15) solid;
+    border-radius: 24.5px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    opacity: .3;
+    // opacity: .2;
 
     input {
         font-family: Josefin Sans, sans-serif;
@@ -95,18 +95,34 @@ p {
         padding-left: 20px;
         background-color: transparent;
         outline: none;
+        opacity: .5;
     }
 
     button {
-        background-image: linear-gradient(90deg, hsl(0, 74%, 64%), hsl(0, 96%, 36%));
+        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+        position: relative;
+        left: 2px;
         display: flex;
         align-items: center;
-        padding: 13.5px 24px;
+        padding: 14.5px 25px;
         border: none;
-        border-radius: 22.5px;
-        box-shadow: 0px 10px 20px hsl(0, 74%, 74%);
+        border-radius: 24.5px;
+        box-shadow: 0px 10px 20px hsl(0, 100%, 91%);
+        opacity: 1;
+    }
+
+    button:hover {
+        opacity: .5;
+        padding: 14.5px 35px;
+        transition: .5s;
+    }
+    button:active {
+        opacity: 1;
+        padding: 14.5px 35px;
+        transition: .5s;
     }
 }
+
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: $ds-red;
@@ -125,10 +141,10 @@ p {
 .attribution {
     font-size: 11px;
     text-align: center;
-    margin-top: 20px;
+    margin: 50px 30px 20px;
 }
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: black;
 }
 
 @media only screen and (min-width: 800px) {
