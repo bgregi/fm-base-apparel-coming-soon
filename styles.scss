@@ -189,14 +189,23 @@ h1 {
     color: black;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 800px) {
+    html {
+        height: 100vh;
+    }
+
     body {
         background-image: url(images/bg-pattern-desktop.svg);
+        background-size: 1500px;
+        background-position-y: -400px;
+        background-position-x: -50px;
+        background-repeat: no-repeat;
         display: flex;
+        height: 100vh;
     }
 
     .all-but-img {
-        padding: 70px 14% 0 9% ;
+        padding: 70px 16% 0 12% ;
     }
 
     .logo {
@@ -222,16 +231,33 @@ h1 {
 
     .email-div {
         margin: 30px 0 0 0;
+
+        input {
+            font-size: 1rem;
+        }
+
+        .button-div {
+            button {
+                padding: 14.5px 35px;
+
+            }
+        }
     }
 
-
-
-
-
+    .success-msg, .error-msg {
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    
     #hero-mobile {
         display: none;
     }
     #hero-desktop {
         display: inherit;
+        // width: 42%;
+    }
+
+    .attribution {
+        margin-top: 50px;
     }
 }
