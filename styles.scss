@@ -29,16 +29,21 @@ $dg-red: hsl(0, 6%, 24%);
     font-family: Josefin Sans Light;
     src: url(fonts/JosefinSans-Light.ttf) format("truetype");
 }
-
-
-
+@font-face {
+    font-family: Josefin Sans Semibold;
+    src: url(fonts/JosefinSans-SemiBold.ttf) format("truetype");
+}
 
 body {
     font-family: Josefin Sans, sans-serif;
     font-size: 16px;
     color: $ds-red;
     margin: 0;
-    background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-image: linear-gradient(
+        135deg,
+        hsl(0, 0%, 100%),
+        hsl(0, 100%, 98%)
+    );
 }
 
 .logo {
@@ -46,10 +51,11 @@ body {
     padding: 30px;
 }
 
-.model-img {
-    img {
-        width: 100%;
-    }
+#hero-mobile {
+    width: 100%;
+}
+#hero-desktop {
+    display: none;
 }
 
 h1 {
@@ -61,16 +67,14 @@ h1 {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 200;
-    
+
     strong {
         color: black;
-        font-family: Josefin Sans, sans-serif;
-        font-weight: 700;
+        font-family: Josefin Sans Semibold, sans-serif;
     }
-
 }
 
-p {
+.main-text {
     font-size: 14px;
     padding: 0 40px 15px;
     text-align: center;
@@ -79,9 +83,9 @@ p {
 }
 
 .email-div {
-    margin: 20px 30px;
+    margin: 20px 30px 10px;
     height: 45px;
-    border: 2px rgba($color: #000000, $alpha: .15) solid;
+    border: 2px rgba($color: #000000, $alpha: 0.15) solid;
     border-radius: 24.5px;
     display: flex;
     align-items: center;
@@ -92,31 +96,40 @@ p {
         font-size: 14px;
         border: none;
         padding-left: 20px;
+        width: 100%;
         background-color: transparent;
         outline: none;
-        opacity: .5;
+        opacity: 0.5;
     }
 
     #error {
-        // display: none;
+        display: none;
         position: relative;
         height: 20px;
-        left: 50px;
+        right: 10px;
     }
 
-    button {
-        background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-        position: relative;
-        left: 2px;
+    .button-div {
         display: flex;
         align-items: center;
-        padding: 14.5px 25px;
-        border: none;
-        border-radius: 24.5px;
-        box-shadow: 0px 10px 20px hsl(0, 100%, 91%);
-        opacity: 1;
-    }
 
+        button {
+            background-image: linear-gradient(
+                135deg,
+                hsl(0, 80%, 86%),
+                hsl(0, 74%, 74%)
+            );
+            position: relative;
+            left: 2px;
+            display: flex;
+            align-items: center;
+            padding: 14.5px 25px;
+            border: none;
+            border-radius: 24.5px;
+            box-shadow: 0px 10px 20px hsl(0, 100%, 91%);
+            opacity: 1;
+        }
+    }
 }
 
 .email-div-focus {
@@ -125,38 +138,47 @@ p {
 
 .email-div-error {
     border: 2px $sf-red solid;
-
-
 }
 
-
-
-
-
-button:hover {
-    opacity: .5;
+.button-div button:hover {
+    opacity: 0.5;
     padding: 14.5px 35px;
-    transition: .5s;
+    transition: 0.5s;
 }
-button:active {
+.button-div button:active {
     opacity: 1;
     padding: 14.5px 35px;
-    transition: .2s;
+    transition: 0.2s;
 }
 
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: $ds-red;
 }
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: $ds-red;
 }
-  
-::-ms-input-placeholder { /* Microsoft Edge */
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: $ds-red;
- }
+}
 
+.success-msg {
+    font-size: 12px;
+    text-align: left;
+    display: none;
+    margin-left: 50px;
+}
 
-
+.error-msg {
+    font-size: 12px;
+    text-align: left;
+    color: $sf-red;
+    display: none;
+    margin-left: 50px;
+}
 
 .attribution {
     font-size: 11px;
@@ -167,5 +189,49 @@ button:active {
     color: black;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 500px) {
+    body {
+        background-image: url(images/bg-pattern-desktop.svg);
+        display: flex;
+    }
+
+    .all-but-img {
+        padding: 70px 14% 0 9% ;
+    }
+
+    .logo {
+        width: 175px;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 4.1rem;
+        text-align: left;
+        padding: 0;
+        margin: 130px 0 0 0;
+        letter-spacing: 18px;
+    }
+
+    .main-text {
+        padding: 0;
+        text-align: left;
+        margin: 25px 0 0 0;
+        font-size: 1rem;
+        line-height: 25px;
+    }
+
+    .email-div {
+        margin: 30px 0 0 0;
+    }
+
+
+
+
+
+    #hero-mobile {
+        display: none;
+    }
+    #hero-desktop {
+        display: inherit;
+    }
 }

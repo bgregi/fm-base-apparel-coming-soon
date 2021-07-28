@@ -16,39 +16,70 @@
         <title>Frontend Mentor | Base Apparel coming soon page</title>
     </head>
     <body>
-        <header>
-            <img class="logo" src="images/logo.svg" alt="Base Apparel" />
-        </header>
-        <div class="model-img">
-            <img src="images/hero-mobile.jpg" alt="Model" />
+        <div class="all-but-img">
+            <header>
+                <img class="logo" src="images/logo.svg" alt="Base Apparel" />
+            </header>
+            <div class="model-img">
+                <img
+                    id="hero-mobile"
+                    src="images/hero-mobile.jpg"
+                    alt="Model"
+                />
+            </div>
+            <main>
+                <h1>
+                    We're<strong
+                        ><br />
+                        coming <br />
+                        soon</strong
+                    >
+                </h1>
+                <p class="main-text">
+                    Hello fellow shoppers! We're currently building our new
+                    fashion store. Add your email below to stay up-to-date with
+                    announcements and our launch deals.
+                </p>
+                <div id="email-div" class="email-div">
+                    <input
+                        id="email-input"
+                        type="text"
+                        placeholder="Email Address"
+                    />
+                    <div class="button-div">
+                        <img
+                            id="error"
+                            src="images/icon-error.svg"
+                            alt="Error"
+                        />
+                        <button id="button">
+                            <img src="images/icon-arrow.svg" alt="Arrow" />
+                        </button>
+                    </div>
+                </div>
+                <p id="success-msg" class="success-msg">
+                    Great! Your email has been registered
+                </p>
+                <p id="error-msg" class="error-msg">
+                    Please provide a valid email
+                </p>
+            </main>
+
+            <footer>
+                <div class="attribution">
+                    Challenge by
+                    <a
+                        href="https://www.frontendmentor.io?ref=challenge"
+                        target="_blank"
+                        >Frontend Mentor</a
+                    >. Coded by
+                    <a href="https://github.com/bgregi" target="_blank"
+                        >bgregi</a
+                    >.
+                </div>
+            </footer>
         </div>
-        <main>
-            <h1>We're<strong><br> coming <br> soon</strong></h1>
-            <p>
-                Hello fellow shoppers! We're currently building our new fashion
-                store. Add your email below to stay up-to-date with
-                announcements and our launch deals.
-            </p>
-            <div id="email-div" class="email-div">
-                <input id="email-input" type="text" placeholder="Email Address">
-                <img id="error" src="images/icon-error.svg" alt="Error">
-                <button><img src="images/icon-arrow.svg" alt="Arrow"></button>
-
-            </div>
-
-        </main>
-
-        <footer>
-            <div class="attribution">
-                Challenge by
-                <a
-                    href="https://www.frontendmentor.io?ref=challenge"
-                    target="_blank"
-                    >Frontend Mentor</a
-                >. Coded by
-                <a href="https://github.com/bgregi" target="_blank">bgregi</a>.
-            </div>
-        </footer>
+        <img id="hero-desktop" src="images/hero-desktop.jpg" alt="Model" />
         <script src="index.js"></script>
     </body>
 </html>
