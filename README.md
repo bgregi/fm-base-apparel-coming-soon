@@ -49,7 +49,7 @@ Users should be able to:
 
 This challenge helped to consolidate what i've learned about CSS in the previous challenges, having to deal with different font styles, background images, hover and active statuses, input fields, buttons and transitions. I had no big problems with the javascript part, but it was a lot of fun.
 
-I ended up adding a success message, which wasn't included in the challenge description, and also added a transition in the button size and color that i think added could improve the user experience.
+I ended up adding a success message, which wasn't included in the challenge description, and also a transition to the button size and color that I think could improve the user experience.
 
 ## Author
 
