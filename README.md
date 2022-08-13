@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [https://github.com/bgregi/base-apparel-coming-soon](https://github.com/bgregi/base-apparel-coming-soon)
-- Live Site URL: [https://bgregi.github.io/base-apparel-coming-soon/](https://bgregi.github.io/base-apparel-coming-soon/)
+- Solution URL: [https://github.com/bgregi/fm-base-apparel-coming-soon](https://github.com/bgregi/fm-base-apparel-coming-soon)
+- Live Site URL: [https://bgregi.github.io/fm-base-apparel-coming-soon/](https://bgregi.github.io/fm-base-apparel-coming-soon/)
 
 ## My process
 
